@@ -12,25 +12,25 @@ public class Option3JiahaoZhou {
     
     private void pedirTituloLibro()
         {
-           tituloLibro = metodosDePedir.metodosDePedir.pedirCadena("Inserte el nombre del libro: ");
+           tituloLibro = metodosDePedir.pedirCadena("Inserte el nombre del libro: ");
         }
     
     private void pedirAutorLibro()
         {
-            autorLibro = metodosDePedir.metodosDePedir.pedirCadena("Inserte el nombre del Autor del libro: ");
+            autorLibro = metodosDePedir.pedirCadena("Inserte el nombre del Autor del libro: ");
         }
     private void pedirPaginaLibro()
         {
-           numPagLibro = metodosDePedir.metodosDePedir.pedirEntero("Inserte el numero de página que tiene el libro: ");
+           numPagLibro = metodosDePedir.pedirEntero("Inserte el numero de página que tiene el libro: ");
         }
     
     private void pedirAutor()
         {
-            autor = metodosDePedir.metodosDePedir.pedirCadena("Inserte nombre un Autor para empezar: ");
+            autor = metodosDePedir.pedirCadena("Inserte nombre un Autor para empezar: ");
         }
     private void pedirNumPag()
         {
-            numPag = metodosDePedir.metodosDePedir.pedirEntero("Inserte un número de página para empezar: ");
+            numPag = metodosDePedir.pedirEntero("Inserte un número de página para empezar: ");
         }
     
     private void pedirDatosDeInicio()
@@ -49,7 +49,7 @@ public class Option3JiahaoZhou {
                     pedirPaginaLibro();
                     if(numPagLibro < 0)
                         {
-                            System.out.println(ColorWord.color.RED+"\tNúmero de página NEGATIVO");
+                            System.out.println(color.RED+"\tNúmero de página NEGATIVO");
                         }
                     else
                         {
@@ -68,7 +68,7 @@ public class Option3JiahaoZhou {
                 }
             catch (InputMismatchException e) 
                 {
-                    System.out.println(ColorWord.color.RED+"\tHas insertado letras en [número de página]");
+                    System.out.println(color.RED+"\tHas insertado letras en [número de página]");
                 }
         }
     
@@ -80,9 +80,9 @@ public class Option3JiahaoZhou {
     
     private void visualizarDatos()
         {
-            System.out.println(ColorWord.color.BLUE+"\tLibro: "+tituloLibro);
-            System.out.println(ColorWord.color.BLUE+"\tAutor: "+autorLibro);
-            System.out.println(ColorWord.color.BLUE+"\tNúmero de páginas: "+numPagLibro);
+            System.out.println(color.BLUE+"\tLibro: "+tituloLibro);
+            System.out.println(color.BLUE+"\tAutor: "+autorLibro);
+            System.out.println(color.BLUE+"\tNúmero de páginas: "+numPagLibro);
         }
     
     private boolean comprobarNumPag(int num)

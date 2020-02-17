@@ -3,9 +3,9 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package opcion2;
+package projectalex;
 
-import Clases.ErroresOp2;
+
 import pedirDatos.PedirDatosTeclado;
 import java.util.InputMismatchException;
 
@@ -61,7 +61,7 @@ public class Alumno {
     }
 
     public void pedirEdad() {
-        edad = pedirDatos.PedirDatosTeclado.pedirIntValidarLetras("Inserte la edad: ");
+        edad = pedirDatos.PedirDatosTeclado.pedirIntValidInsLetras("Inserte la edad: ");
     }
 
     public void pedirNotas() {

@@ -4,10 +4,10 @@
  * and open the template in the editor.
  */
 
-package menu;
+package projectalex;
 
 
-public class Menu {
+public class Principal {
 
 
     public static void main(String[] args) {

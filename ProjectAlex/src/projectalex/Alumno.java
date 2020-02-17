@@ -6,6 +6,7 @@
 package projectalex;
 
 
+import Clases.ErroresOp2;
 import pedirDatos.PedirDatosTeclado;
 import java.util.InputMismatchException;
 

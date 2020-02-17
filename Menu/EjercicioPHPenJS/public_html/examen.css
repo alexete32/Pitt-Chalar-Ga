@@ -1,0 +1,98 @@
+@charset "utf-8";
+
+@import "https://fonts.googleapis.com/css?family=Boogaloo&effect=3d";
+
+body {
+    font-family: "Arial Narrow";
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    color: #000;
+}
+
+.header {
+	background-color: red;
+	margin:auto;
+        font-size: 48px;
+        font-family: "Boogaloo";
+}
+
+.container {
+	width: 600px;
+	background-color: white;
+	margin: 0 auto; /* el valor automático de los lados, unido a la anchura, centra el diseño */
+}
+
+.content {
+	padding: 10px 0;
+	width: 600px;
+        float: right;
+        background-color: white;
+}
+
+.footer {
+	padding: 10px 0;
+	background-color: yellow;
+	position: relative;
+	clear: both;
+}
+
+.footer p{
+        font-size: 24px;
+        color: red;
+        font-family: "Boogaloo";
+}
+
+.boton
+{
+    background-color: green;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+}
+
+.centrar
+{
+    text-align:center;
+}
+
+.casilla
+{
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+}
+
+table
+{
+    margin: auto;
+}
+
+input
+{
+    text-align: center;
+}
+
+.primera{
+    float: left;
+}
+
+.segunda{
+    float: left;
+}
+
+.tercera{
+    float: left;    
+}
+
+.cuarta {
+    float: left;        
+}
+
+h1, p {
+	margin-top: 0;	 /* la eliminación del margen superior resuelve un problema que origina que los márgenes escapen de la etiqueta div contenedora. El margen inferior restante lo mantendrá separado de los elementos de que le sigan. */
+	padding-right: 15px;
+	padding-left: 15px; /* la adición de relleno a los lados del elemento dentro de las divs, en lugar de en las divs propiamente dichas, elimina todas las matemáticas de modelo de cuadro. Una div anidada con relleno lateral también puede usarse como método alternativo. */
+}
+
+

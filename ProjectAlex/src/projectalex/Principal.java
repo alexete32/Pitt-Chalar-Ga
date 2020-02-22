@@ -30,6 +30,10 @@ public class Principal {
                 break;
             case 3:
                 Option3JiahaoZhou libro = new Option3JiahaoZhou();
+                int ret = libro.empezarPedir();
+                if (ret == 1 || ret == 2) {
+                    System.out.println("Se termina de introducir datos");
+                }
                 break;
             case 4:
                 System.out.println("Opcion 4");
@@ -40,28 +44,25 @@ public class Principal {
     }
 
     static void opcionEmpleados() {
-        int cont, contEm = 0;
+        int cont =0, contEm = 0;
         float maxSueldo = Integer.MIN_VALUE;
-        Empleados em = new Empleados();
+        
         Empleados emMaxSueldo = new Empleados();
 
         do {
-            contEm++;
-            cont = 0;
+            Empleados em = new Empleados();
             em.pedirNombre();
             em.pedirEdad();
             try {
                 em.pedirSueldo();
+                if (em.getSueldo() > maxSueldo) {
+                    maxSueldo = em.getSueldo();
+                    emMaxSueldo = em;   
+                }
+                contEm++;
             } catch (InputMismatchException e) {
                 System.out.println("Lo siento has insertado letras, se va a ir del programa");
                 cont++;
-                if (em.getSueldo() > maxSueldo) {
-
-                    maxSueldo = em.getSueldo();
-                    emMaxSueldo = em;
-                   
-                }
-
             }
         } while (cont == 0);
         System.out.println("Los datos del empleado con mayor sueldo son : ");

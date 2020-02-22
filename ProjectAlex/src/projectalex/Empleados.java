@@ -24,10 +24,10 @@ public class Empleados {
             cont = 0;
             try {
                 Scanner sc = new Scanner(System.in);
-                System.out.print("Inserte su nombre: ");
+                System.out.print("\nInserte su nombre: ");
                 nombre = sc.nextLine();
             } catch (Exception e) {
-                System.out.println("Lo siento se ha producido un error");
+                System.out.println(Colores.RED+"\n\t\tLo siento se ha producido un error");
                 cont++;
             }
         } while (cont == 1);
@@ -40,7 +40,7 @@ public class Empleados {
             do {
                 try {
                     Scanner sc = new Scanner(System.in);
-                    System.out.print("Inserte su edad: ");
+                    System.out.print("\nInserte su edad: ");
                     edad = sc.nextInt();
                         if(edad <18)
                         {
@@ -50,7 +50,7 @@ public class Empleados {
                             System.out.println(Colores.RED+"\n\tEl empleado no puede estar en edad de jubilación");
                         }
                 } catch (InputMismatchException e) {
-                    System.out.println("Lo siento has insertado letras");
+                    System.out.println(Colores.RED+"\n\t\tLo siento has insertado letras");
                     cont++;
                 }
             } while (!(edad >= 18 && edad <= 65));
@@ -59,7 +59,7 @@ public class Empleados {
 
     public void pedirSueldo() {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Inserte su sueldo: ");
+        System.out.print("\nInserte su sueldo: ");
         sueldo = sc.nextInt();
 
     }

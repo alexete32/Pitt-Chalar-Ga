@@ -7,7 +7,7 @@ package projectalex;
 
 
 public class Opcion2 {
-
+/*
     public static void main(String[] args) {
         Alumno alu, aluMenosMed;
         float menosMedia = Integer.MAX_VALUE;
@@ -29,12 +29,12 @@ public class Opcion2 {
         
         if (aluMenosMed == null) {
             System.out.println("\nNo se han insertado las notas para hacer la media.");
-            System.out.println("No puedo visualizar los datos de la media más baja.");
+            System.out.println("\nNo puedo visualizar los datos de la media más baja.");
         } else {
             System.out.println("\nEl alumno con peor media es:");
             aluMenosMed.visualizarTodo();
         }
 
     }
-
+*/
 }

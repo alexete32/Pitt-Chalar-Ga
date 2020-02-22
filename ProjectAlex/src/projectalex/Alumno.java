@@ -6,6 +6,7 @@
 package projectalex;
 
 import Clases.ErroresOp2;
+import Utilidades.Colores;
 import pedirDatos.PedirDatosTeclado;
 import java.util.InputMismatchException;
 
@@ -73,7 +74,7 @@ public class Alumno {
     }
 
     public void pedirEdad() {
-        edad = pedirDatos.PedirDatosTeclado.pedirIntValidInsLetras("Inserte la edad: ");
+        edad = pedirDatos.PedirDatosTeclado.pedirIntValidInsLetras("\nInserte la edad: ");
     }
 
     public void pedirNotas() {
@@ -96,7 +97,7 @@ public class Alumno {
                     }
 
                 } catch (InputMismatchException e) {
-                    System.out.println("Error, ha insertado letras.");
+                    System.out.println(Colores.RED+"\n\t\tError, ha insertado letras.");
                     errorn++;
                     break;
                 }
@@ -110,20 +111,20 @@ public class Alumno {
 
     float media(float total) {
         media = total / 5;
-        System.out.println("\n La media de notas es: " + media);
+        System.out.println("\n\tLa media de notas es: " + media);
         return media;
     }
 
     void visualizarNombre() {
-        System.out.println("\nSu nombre es: " + nombre);
+        System.out.println("\n\tSu nombre es: " + nombre);
     }
 
     void visualizarEdad() {
-        System.out.println("Su edad es: " + edad);
+        System.out.println("\n\tSu edad es: " + edad);
     }
 
     void visualizarNota() {
-        System.out.println("Su nota media es de: " + media);
+        System.out.println("\n\tSu nota media es de: " + media);
     }
 
     public void visualizarTodo() {
@@ -134,8 +135,8 @@ public class Alumno {
 
     void validarSalir() {
         if (nombre.equalsIgnoreCase("fin")) {
-            System.out.println("Se ha introducido fin");
-            System.out.println("Cerramos el programa");
+            System.out.println(Colores.BLUE+"\n\tSe ha introducido fin");
+            System.out.println(Colores.BLUE+"\n\tCerramos el programa");
         }
     }
 

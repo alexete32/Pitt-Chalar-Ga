@@ -12,7 +12,7 @@ import java.util.InputMismatchException;
  * @author Alex
  */
 public class ProjectAlex {
-
+/*
     public static void main(String[] args) {
         int cont,contEm=0;
         float maxSueldo = Integer.MIN_VALUE;
@@ -41,6 +41,6 @@ public class ProjectAlex {
         System.out.println("Hemos metido los datos de "+contEm+" Empleados");
         
     }
-
+*/
 }
 

@@ -5,6 +5,13 @@
  */
 package projectalex;
 
+/**
+ * Proyecto Realizado por :
+ * Alejandro Diaz
+ * Jorge Casau
+ * Jiahao Zhou
+ * Francisco Alcántara
+ */
 import Utilidades.Colores;
 import java.util.InputMismatchException;
 import pedirDatos.PedirDatosTeclado;

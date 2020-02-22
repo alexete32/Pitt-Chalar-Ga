@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 
-package projectalex;
+package ProyectoEntornos;
 
 import Utilidades.Colores;
 

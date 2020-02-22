@@ -65,7 +65,7 @@ public class Principal {
                 cont++;
             }
         } while (cont == 0);
-        System.out.println("Los datos del empleado con mayor sueldo son : ");
+        System.out.println("\nLos datos del empleado con mayor sueldo son : ");
         emMaxSueldo.visuTodo();
         System.out.println("Hemos metido los datos de " + contEm + " Empleados");
     }

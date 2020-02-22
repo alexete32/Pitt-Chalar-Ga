@@ -5,6 +5,7 @@
  */
 package projectalex;
 
+import Utilidades.Colores;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -41,6 +42,13 @@ public class Empleados {
                     Scanner sc = new Scanner(System.in);
                     System.out.print("Inserte su edad: ");
                     edad = sc.nextInt();
+                        if(edad <18)
+                        {
+                            System.out.println(Colores.RED+"\n\tEl empleado no puede ser menor de edad");
+                        } else if (edad > 65)
+                        {
+                            System.out.println(Colores.RED+"\n\tEl empleado no puede estar en edad de jubilación");
+                        }
                 } catch (InputMismatchException e) {
                     System.out.println("Lo siento has insertado letras");
                     cont++;
@@ -75,8 +83,8 @@ public class Empleados {
     }
 
     public void visuTodo() {
-        System.out.println("NOMBRE: " + nombre);
-        System.out.println("EDAD: " + edad);
-        System.out.println("SUELDO: " + sueldo);
+        System.out.println("\t\tNOMBRE: " + nombre);
+        System.out.println("\t\tEDAD: " + edad);
+        System.out.println("\t\tSUELDO: " + sueldo);
     }
 }

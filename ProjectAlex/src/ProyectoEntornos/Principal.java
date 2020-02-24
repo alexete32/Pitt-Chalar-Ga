@@ -43,7 +43,7 @@ public class Principal {
                 }
                 break;
             case 4:
-                System.out.println("Opcion 4");
+                System.out.println("Saliendo del programa");
                 break;
 
         }
